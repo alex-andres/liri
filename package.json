@@ -1,0 +1,24 @@
+{
+  "name": "liri",
+  "version": "1.0.0",
+  "description": "a language interpretation recognition interface that responds to user input and provides relevant data by making calls to twitter, spotify and omdb api's",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c-andres/liri.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/c-andres/liri/issues"
+  },
+  "homepage": "https://github.com/c-andres/liri#readme",
+  "dependencies": {
+    "node-spotify-api": "^1.0.7",
+    "request": "^2.83.0",
+    "twitter": "^1.7.1"
+  }
+}
