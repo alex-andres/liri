@@ -78,17 +78,16 @@ Actors: ${jsonObj.Actors}`);
 };
 
 let doItCall = () => {
-	// fs.readFile('random.txt', "utf8",(error, data) =>{
-	// 		if (error) {
-	//     		return console.log(error);
-	//   		}
-	// 		let arr = data.split('');
-	// 		if (arr[0] === "spotify-this-song") {
-	// 			let song = arr[1].slice(1, -1);
-	// 			spotifyCall(song);
-	// 		}
-	// })
-	console.log('help')
+	fs.readFile('random.txt', "utf8",(error, data) =>{
+			if (error) {
+	    		return console.log(error);
+	  		}
+			let arr = data.split(',');
+			if (arr[0] === "spotify-this-song") {
+				let song = arr[1].slice(1, -1);
+				spotifyCall(song);
+			}
+	})
 };
 
 
