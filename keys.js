@@ -16,8 +16,11 @@ const spotifyKeys ={
 	redirect_uri =  ''// Your redirect uri
 };
 
+const omdbKey = '40e9cece'
+
 module.exports = {
 	twitterKeys,
-	spotifyKeys
+	spotifyKeys,
+	omdbKey
 };
 
