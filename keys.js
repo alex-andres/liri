@@ -10,27 +10,15 @@ const twitterKeys = {
   access_token_secret: 'iHpkSHMUEBq681yMY4ytiH0mdut6M7n24Tx95nbYA3bxO'
 };
 
-const spotifyKeys ={
-<<<<<<< HEAD
-	client_id = '7291b9b9b28d4d85b49b119a666d10a0', // Your client id
-	client_secret = 'ee2e49441fbf4db6906d0ad019648640', // Your secret
-	redirect_uri =  ''// Your redirect uri
+const spotifyKeys = {
+	id: '7291b9b9b28d4d85b49b119a666d10a0', // Your client id
+	secret: 'ee2e49441fbf4db6906d0ad019648640'
 };
 
-const omdbKey = '40e9cece'
+const omdbKey = '40e9cece';
 
 module.exports = {
 	twitterKeys,
 	spotifyKeys,
 	omdbKey
-=======
-	id: '7291b9b9b28d4d85b49b119a666d10a0', // Your client id
-	secret: 'ee2e49441fbf4db6906d0ad019648640' // Your secret
 };
-
-module.exports = {
-	twitterKeys,
-	spotifyKeys
->>>>>>>  files
-};
-
