@@ -11,6 +11,7 @@ const twitterKeys = {
 };
 
 const spotifyKeys ={
+<<<<<<< HEAD
 	client_id = '7291b9b9b28d4d85b49b119a666d10a0', // Your client id
 	client_secret = 'ee2e49441fbf4db6906d0ad019648640', // Your secret
 	redirect_uri =  ''// Your redirect uri
@@ -22,5 +23,14 @@ module.exports = {
 	twitterKeys,
 	spotifyKeys,
 	omdbKey
+=======
+	id: '7291b9b9b28d4d85b49b119a666d10a0', // Your client id
+	secret: 'ee2e49441fbf4db6906d0ad019648640' // Your secret
+};
+
+module.exports = {
+	twitterKeys,
+	spotifyKeys
+>>>>>>>  files
 };
 

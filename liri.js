@@ -7,8 +7,7 @@ const twitterKeys = keys.twitterKeys;
 const spotifyKeys = keys.spotifyKeys;
 const omdbKey = keys.omdbKey;
 
-const client = new twitter(twitterKeys);
-const spotifyApp = new spotify(spotifyKeys);
+
 
 
 
@@ -28,6 +27,7 @@ let twitterCall = () => {
 };
 
 let spotifyCall = () => {
+
  
   spotifyApp.search({ type: 'track', query: process.argv[3], limit: 1 })
   .then(function(response) {
@@ -45,6 +45,7 @@ let spotifyCall = () => {
    });
  };
 
+
 // let omdbCall = () => {
 
 // };
@@ -55,19 +56,19 @@ let spotifyCall = () => {
 
 
 // using an object literal in place of a switch case for readability and efficiency
-// chooseFunc = (type) => {
+// let chooseFunc = (type) => {
 //   let funcOptions = {
 //     'my-tweets': twitterCall(),
-//     'spotify-this-song': spotifyCall(),
-//     'movie-this': omdbCall(),
-//     'do-what-it-says': doItCall()
+//     'spotify-this-song': spotifyCall()
+//     // 'movie-this': omdbCall(),
+//     // 'do-what-it-says': doItCall()
 //   }
-//   return funcOptions[type];
+//   return funcOptions[type]();
 // }
 
-// //calling the function above
+//calling the function above
 // let userInput = chooseFunc(process.argv[2]);
-
-if (process.argv[2] === `spotify-this-song`){
+if (process.argv[2] === 'spotify-this-song'){
+>>>>>>>  files
 	spotifyCall();
 }
